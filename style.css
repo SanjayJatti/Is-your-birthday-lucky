@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+    margin: auto;
+    background-color:#B42B51 ;
+
+}
+
+nav{
+    font-family: 'Righteous', cursive;
+    background-color: #7D1935;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+section{
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #FEC260;
+    font-weight: bold;
+    text-align: center;
+}
+
+label,
+input{
+    display: block;
+}
+label{
+    margin-bottom: 0.5rem;
+    padding-top: 2rem;
+}
+input{
+    width: 30%;
+    margin: auto;
+    padding:0.5rem
+}
+
+#check-button{
+    display: block;
+    margin: auto;
+    padding:0.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: transparent;
+    color: #FEC260;
+    border-width: medium;
+    border-color:#FEC260;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+}
+#output{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
