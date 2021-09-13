@@ -6,13 +6,13 @@ const output=document.querySelector("#output");
 
 function checkDOBLucky(){
     const DOB=dateOfBirth.value;
-    console.log(DOB);
+
     const sum=calculateSum(DOB);
    
-    if(sum&&luckyNumber.value){
+    if(sum && luckyNumber.value){
     compareValues(sum,luckyNumber.value);
     }else{
-        output.innerText="Please enter input";
+        output.innerText="Please enter both input";
     }
     
 }
@@ -27,6 +27,12 @@ function calculateSum(DOB){
     return sum;
 }
 function compareValues(sum,luckyNumber){
+    if (Number(!luckyNumber)) {
+        return output.innerText = "Please enter your lucky number too"
+    } else if (Number(luckyNumber < 0)) {
+        return output.innerText = "Please enter positive number"
+    }
+
     if(sum%luckyNumber===0){
         output.innerText="Hurray! Your birthday is Lucky🥳"
     }else{
